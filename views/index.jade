@@ -1,0 +1,39 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title AfriTales
+    link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css")
+    link(rel="stylesheet", href="/stylesheets/style.css")
+
+  body
+    .container(style="padding-bottom:60px;")
+      header
+        h1.text-center.py-4 Nigerian Tales
+      main
+        .row.justify-content-center
+          .spinner-container#spinner-container(style="display: none;")
+            center
+              p(style="font-size:20px; color:blue;") please wait...
+            .spinner 
+          .col-md-6
+            form(action="/reply", method="POST")
+              .form-group
+                label(for="animalInput") Animal:
+                input#animalInput.form-control(type="text", placeholder="Enter any 2 animals", name="animalInput", required)
+              .form-group 
+                label(for="stateInput") Nigerian State:
+                input#stateInput.form-control(type="text", placeholder="Enter a Nigerian state", name="stateInput", required)
+              if (string == null)
+                button#generateButton.btn.btn-primary.btn-block(type="submit") Generate Story
+              if (string)
+                button#generateButton.btn.btn-primary.btn-block(type="submit") #{string}
+
+              if (result != null)
+                #storyOutput.mt-4(style="font-size:30px; color:brown; border:2px dashed blue; padding:30px; border-radius:20px;") #{result}
+
+    script(src="https://code.jquery.com/jquery-3.5.1.slim.min.js")
+    script(src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js")
+    script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js")
+    script(src="/javascripts/script.js")
