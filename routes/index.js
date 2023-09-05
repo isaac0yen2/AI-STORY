@@ -1,5 +1,6 @@
 var express = require('express');
 var router = express.Router();
+let fghjkhdkjsdhsjdhajsuiauew8392849wieudskjsd = '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'
 const {
   OpenAI
 } = require("openai");
@@ -14,7 +15,7 @@ router.get('/', function (req, res, next) {
 
 router.post('/reply', async (req, res) => {
   const openai = new OpenAI({
-    apiKey: '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'
+    apiKey: fghjkhdkjsdhsjdhajsuiauew8392849wieudskjsd
   });
   const completion = await openai.chat.completions.create({
     messages: [{
