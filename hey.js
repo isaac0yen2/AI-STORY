@@ -1,6 +1,7 @@
 let OpenAI = require('openai')
+let jjky4567ugsyhiiajhfwkkyurnnyuu222uajcxbzgjuzjDDvhgdj = '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'
 const openai = new OpenAI({
-  apiKey: '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'
+  apiKey: jjky4567ugsyhiiajhfwkkyurnnyuu222uajcxbzgjuzjDDvhgdj
 });
 
 async function main() {
