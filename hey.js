@@ -1,5 +1,5 @@
 let OpenAI = require('openai')
-let jjky4567ugsyhiiajhfwkkyurnnyuu222uajcxbzgjuzjDDvhgdj = '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'
+let jjky4567ugsyhiiajhfwkkyurnnyuu222uajcxbzgjuzjDDvhgdj = 'INSERT_YOUR_CHAT-GPT_3.5_TURBO_MODEL_API_KEY'
 const openai = new OpenAI({
   apiKey: jjky4567ugsyhiiajhfwkkyurnnyuu222uajcxbzgjuzjDDvhgdj
 });
