@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-let fghjkhdkjsdhsjdhajsuiauew8392849wieudskjsd = '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'
+let jjky4567ugsyhiiajhfwkkyurnnyuu222uajcxbzgjuzjDDvhgdj = 'INSERT_YOUR_CHAT-GPT_3.5_TURBO_MODEL_API_KEY'
 const {
   OpenAI
 } = require("openai");
@@ -15,7 +15,7 @@ router.get('/', function (req, res, next) {
 
 router.post('/reply', async (req, res) => {
   const openai = new OpenAI({
-    apiKey: fghjkhdkjsdhsjdhajsuiauew8392849wieudskjsd
+    apiKey: jjky4567ugsyhiiajhfwkkyurnnyuu222uajcxbzgjuzjDDvhgdj
   });
   const completion = await openai.chat.completions.create({
     messages: [{
